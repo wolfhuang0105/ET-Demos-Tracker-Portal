@@ -2,7 +2,7 @@
   "_note": "ETalking Demos Tracker Portal v2.0 · 共用設定檔。此檔案包含四組 JS 會讀取的欄位：sheet_url、gas_url、parse_rules、consultants。其他設定（品牌、方案、預設值、折扣名稱等）全部 hardcode 在 HTML 內，不在此 config 內。",
 
   "_sheet_url_note": "Google Sheet 班表網址。啟動時 loadConfig() 讀到後呼叫 _fetchSheet()，以 TSV 匯出格式抓班表、由 parse_rules 解析出當期顧問名單並產生 chips。若抓取失敗或網址為空，fallback 回下方 consultants 硬編碼名單。",
-  "sheet_url": "https://docs.google.com/spreadsheets/d/13SrI50MGBAJHcRqFXa2TT5EDki3EGd0YL5wAGKXzPuw/edit?gid=1534602765#gid=1534602765",
+  "sheet_url": "https://docs.google.com/spreadsheets/d/13SrI50MGBAJHcRqFXa2TT5EDki3EGd0YL5wAGKXzPuw/edit?gid=2113715679#gid=2113715679",
 
   "_gas_url_note": "Google Apps Script Web App URL（需 Deploy 後取得、以 /exec 結尾）。供顧問偏好設定同步到雲端共用。GAS 端需實作 action=getAllPrefs（GET）與 action=setPref（POST，body:{consultant_id, patch}）兩個接口，並回傳 {ok:true, data|error}。若留空則顧問設定 Modal 為唯讀（本機模式）。",
   "gas_url": "https://script.google.com/macros/s/AKfycbz7ydX6cc_K_y0U97H4_2Ho5nONOvJtVOxe5EqVZVukheTDsi3Nt1CUhIcfQjIv5Cvw/exec",
